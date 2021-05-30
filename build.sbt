@@ -4,7 +4,7 @@ version := "1.0"
 
 val sparkVersion = "3.1.1"
 
-name := "spark-sbt-template"
+name := "spark-scala-assignment"
 
 logBuffered in Test := false
 
@@ -18,6 +18,9 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provi
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.8"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % "test"
 //libraryDependencies += "com.holdenkarau" %% "spark-testing-base" % "2.4.3_0.12.0" % "test"
+libraryDependencies += "commons-io" % "commons-io" % "2.9.0"
+libraryDependencies += "commons-cli" % "commons-cli" % "1.4"
+libraryDependencies += "com.github.losizm" %% "little-cli" % "0.8.0"
 
 fork in Test := true
 javaOptions ++= Seq("-Xms512M", "-Xmx2048M", "-XX:MaxPermSize=2048M", "-XX:+CMSClassUnloadingEnabled")

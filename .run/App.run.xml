@@ -4,7 +4,8 @@
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
     <option name="MAIN_CLASS_NAME" value="App" />
-    <module name="spark-sbt-template" />
+    <module name="spark-scala-assignment" />
+    <option name="PROGRAM_PARAMETERS" value="-r  src/resources/reports -s src/resources/access.log.gz" />
     <option name="VM_PARAMETERS" value="-Dspark.master=local[*]" />
     <method v="2">
       <option name="Make" enabled="true" />
